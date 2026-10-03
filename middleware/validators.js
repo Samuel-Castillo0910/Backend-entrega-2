@@ -6,6 +6,10 @@ function verificarValidaciones(req, res, next) {
   if (!errors.isEmpty()) {
     return res.status(400).json({
       success: false,
+      message: errors
+        .array()
+        .map((error) => error.msg)
+        .join(', '),
       errors: errors.array(),
     });
   }
