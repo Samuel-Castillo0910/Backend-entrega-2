@@ -5,8 +5,8 @@ const {
   loginUser,
   getMe,
 } = require('../controllers/authControllers');
-const { verificarToken } = require('../middleware/auth');
-const { verificarValidaciones } = require('../middleware/validators');
+const { verificarToken } = require('../middlewares/auth');
+const { verificarValidaciones } = require('../middlewares/validators');
 
 const router = express.Router();
 
@@ -50,7 +50,7 @@ const validarLogin = [
     .withMessage('El email es obligatorio')
     .isEmail()
     .withMessage('El email no es válido')
-    .normalizeEmail(),
+    .normalizeEmail({ gmail_remove_dots: false }),
 
   body('password')
     .notEmpty()

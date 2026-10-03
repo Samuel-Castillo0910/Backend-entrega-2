@@ -6,8 +6,8 @@ const {
   updateUser,
   deleteUser,
 } = require('../controllers/usuarioController');
-const { verificarToken, autorizar } = require('../middleware/auth');
-const { verificarValidaciones } = require('../middleware/validators');
+const { verificarToken, autorizar } = require('../middlewares/auth');
+const { verificarValidaciones } = require('../middlewares/validators');
 
 const router = express.Router();
 
