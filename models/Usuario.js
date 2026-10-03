@@ -49,16 +49,25 @@ const usuarioSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-usuarioSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+// Mongoose 9: los hooks async ya no usan next()
+usuarioSchema.pre('save', async function () {
+  if (!this.isModified('password')) return;
 
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
-  next();
 });
 
 usuarioSchema.methods.compararPasswords = async function (password) {
   return await bcrypt.compare(password, this.password);
 };
+
+// Nunca devolver el hash de la contraseña en las respuestas JSON
+usuarioSchema.set('toJSON', {
+  transform: (doc, ret) => {
+    delete ret.password;
+    delete ret.__v;
+    return ret;
+  },
+});
 
 module.exports = mongoose.model('User', usuarioSchema);

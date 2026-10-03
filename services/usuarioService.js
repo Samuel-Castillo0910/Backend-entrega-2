@@ -32,8 +32,19 @@ async function updateUsuario(id, datos) {
     }
   }
 
-  Object.keys(datos).forEach((campo) => {
-    usuario[campo] = datos[campo];
+  const camposPermitidos = [
+    'nombre',
+    'email',
+    'password',
+    'specialty',
+    'avatar',
+    'role',
+  ];
+
+  camposPermitidos.forEach((campo) => {
+    if (datos[campo] !== undefined) {
+      usuario[campo] = datos[campo];
+    }
   });
 
   await usuario.save();
