@@ -31,7 +31,7 @@ const validarActualizacion = [
     .optional()
     .isEmail()
     .withMessage('El email no es válido')
-    .normalizeEmail(),
+    .normalizeEmail({ gmail_remove_dots: false }),
 
   body('password')
     .optional()

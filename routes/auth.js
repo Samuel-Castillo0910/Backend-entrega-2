@@ -23,7 +23,7 @@ const validarRegistro = [
     .withMessage('El email es obligatorio')
     .isEmail()
     .withMessage('El email no es válido')
-    .normalizeEmail(),
+    .normalizeEmail({ gmail_remove_dots: false }),
 
   body('password')
     .notEmpty()

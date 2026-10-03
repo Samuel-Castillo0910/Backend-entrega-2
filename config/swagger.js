@@ -10,8 +10,9 @@ const options = {
       description: 'API de Potion Lab - Entrega 2',
     },
     servers: [
+      ...(process.env.PUBLIC_URL ? [{ url: process.env.PUBLIC_URL }] : []),
       {
-        url: 'http://localhost:4000',
+        url: `http://localhost:${process.env.PORT || 4000}`,
       },
     ],
     components: {
