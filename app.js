@@ -27,6 +27,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/usuarios'));
+app.use('/api/guilds', require('./routes/gremios'));
+app.use('/api/formulas', require('./routes/formulas'));
 
 // Ruta no encontrada
 app.use((req, res) => {

@@ -1,0 +1,587 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Erick Rivas",
+      "email": "erick@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Brewmaster",
+      "avatar": ""
+    },
+    {
+      "id": 2,
+      "name": "Ana López",
+      "email": "ana@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Herbalist",
+      "avatar": ""
+    },
+    {
+      "id": 3,
+      "name": "Carlos Pérez",
+      "email": "carlos@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Runist",
+      "avatar": ""
+    },
+    {
+      "id": 4,
+      "name": "Laura Gómez",
+      "email": "laura@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Taster",
+      "avatar": ""
+    },
+    {
+      "id": 5,
+      "name": "Daniel Ruiz",
+      "email": "daniel@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Brewmaster",
+      "avatar": ""
+    },
+    {
+      "id": 6,
+      "name": "Sofía Martínez",
+      "email": "sofia@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Herbalist",
+      "avatar": ""
+    },
+    {
+      "id": 7,
+      "name": "Mateo Torres",
+      "email": "mateo@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Herbalist",
+      "avatar": ""
+    },
+    {
+      "id": 8,
+      "name": "Valentina Ríos",
+      "email": "valentina@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Herbalist",
+      "avatar": ""
+    },
+    {
+      "id": 9,
+      "name": "Julián Castro",
+      "email": "julian@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Runist",
+      "avatar": ""
+    },
+    {
+      "id": 10,
+      "name": "Camila Ortiz",
+      "email": "camila@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Runist",
+      "avatar": ""
+    },
+    {
+      "id": 11,
+      "name": "Andrés Vélez",
+      "email": "andres@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Taster",
+      "avatar": ""
+    },
+    {
+      "id": 12,
+      "name": "Isabella Marín",
+      "email": "isabella@potionlab.test",
+      "password": "alquimia123",
+      "specialty": "Taster",
+      "avatar": ""
+    }
+  ],
+  "guilds": [
+    {
+      "id": 1,
+      "name": "Alquimistas EIA",
+      "motto": "El conocimiento es nuestra mejor fórmula.",
+      "type": "Public",
+      "emblem": "🧪",
+      "inviteCode": null,
+      "members": [
+        {
+          "userId": 1,
+          "role": "Grandmaster",
+          "joinDate": "2026-07-01"
+        },
+        {
+          "userId": 2,
+          "role": "Senior Alchemist",
+          "joinDate": "2026-07-03"
+        },
+        {
+          "userId": 3,
+          "role": "Apprentice",
+          "joinDate": "2026-07-05"
+        },
+        {
+          "userId": 7,
+          "role": "Apprentice",
+          "joinDate": "2026-07-10"
+        },
+        {
+          "userId": 9,
+          "role": "Senior Alchemist",
+          "joinDate": "2026-07-08"
+        },
+        {
+          "userId": 11,
+          "role": "Taster",
+          "joinDate": "2026-07-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maestros de la Pócima",
+      "motto": "Experimentar hasta encontrar la fórmula perfecta.",
+      "type": "Public",
+      "emblem": "⚗️",
+      "inviteCode": null,
+      "members": [
+        {
+          "userId": 4,
+          "role": "Grandmaster",
+          "joinDate": "2026-07-02"
+        },
+        {
+          "userId": 5,
+          "role": "Senior Alchemist",
+          "joinDate": "2026-07-04"
+        },
+        {
+          "userId": 8,
+          "role": "Apprentice",
+          "joinDate": "2026-07-09"
+        },
+        {
+          "userId": 10,
+          "role": "Apprentice",
+          "joinDate": "2026-07-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Orden de la Luna",
+      "motto": "Los secretos deben permanecer ocultos.",
+      "type": "Private",
+      "emblem": "🌙",
+      "inviteCode": "LUNA23",
+      "members": [
+        {
+          "userId": 6,
+          "role": "Grandmaster",
+          "joinDate": "2026-07-01"
+        },
+        {
+          "userId": 12,
+          "role": "Apprentice",
+          "joinDate": "2026-07-06"
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "id": 1,
+      "guildId": 1,
+      "name": "Poción del Conocimiento",
+      "effect": "Aumentar temporalmente la capacidad de aprendizaje.",
+      "difficulty": 2,
+      "state": "Proposal",
+      "endDate": "2026-09-03",
+      "createdBy": 2,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-28T09:00:00.000Z",
+          "changedByName": "Ana López"
+        }
+      ],
+      "votes": {
+        "ingredient": {},
+        "method": {},
+        "flask": {}
+      }
+    },
+    {
+      "id": 2,
+      "guildId": 1,
+      "name": "Elixir de Fuerza",
+      "effect": "Aumentar temporalmente la fuerza física.",
+      "difficulty": 3,
+      "state": "VotingOpen",
+      "endDate": "2026-09-01",
+      "createdBy": 1,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-20T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-27T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "3": "Raíz de Mandrágora",
+          "9": "Polvo de Estrellas"
+        },
+        "method": {
+          "1": "Llama Azul"
+        },
+        "flask": {
+          "2": "Cristal Lunar"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "guildId": 1,
+      "name": "Bruma del Sigilo",
+      "effect": "Vuelve al bebedor casi invisible por unos minutos.",
+      "difficulty": 1,
+      "state": "VotingOpen",
+      "endDate": "2026-09-02",
+      "createdBy": 9,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-21T09:00:00.000Z",
+          "changedByName": "Julián Castro"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-27T15:00:00.000Z",
+          "changedByName": "Julián Castro"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "7": "Polvo de Estrellas"
+        },
+        "method": {
+          "11": "Baño de Agua Arcana"
+        },
+        "flask": {
+          "3": "Cráneo de Plata"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "guildId": 1,
+      "name": "Tónico de Clarividencia",
+      "effect": "Permite anticipar el próximo movimiento de un rival.",
+      "difficulty": 4,
+      "state": "Closed",
+      "endDate": "2026-08-20",
+      "createdBy": 2,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-10T09:00:00.000Z",
+          "changedByName": "Ana López"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-11T09:00:00.000Z",
+          "changedByName": "Ana López"
+        },
+        {
+          "state": "Closed",
+          "changedAt": "2026-08-20T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "1": "Raíz de Mandrágora",
+          "2": "Polvo de Estrellas"
+        },
+        "method": {
+          "7": "Llama Azul",
+          "11": "Baño de Agua Arcana"
+        },
+        "flask": {
+          "9": "Cráneo de Plata",
+          "11": "Cristal Lunar"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "guildId": 1,
+      "name": "Esencia de Resistencia",
+      "effect": "Reduce el cansancio durante esfuerzos prolongados.",
+      "difficulty": 3,
+      "state": "Distilled",
+      "endDate": "2026-08-15",
+      "createdBy": 1,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-01T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-02T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        },
+        {
+          "state": "Closed",
+          "changedAt": "2026-08-14T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        },
+        {
+          "state": "Distilled",
+          "changedAt": "2026-08-15T09:00:00.000Z",
+          "changedByName": "Erick Rivas"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "1": "Raíz de Mandrágora",
+          "2": "Raíz de Mandrágora",
+          "7": "Polvo de Estrellas"
+        },
+        "method": {
+          "1": "Llama Azul",
+          "9": "Baño de Agua Arcana",
+          "11": "Baño de Agua Arcana"
+        },
+        "flask": {
+          "2": "Cristal Lunar",
+          "3": "Cráneo de Plata",
+          "11": "Cristal Lunar"
+        }
+      },
+      "finalPotion": {
+        "finalName": "Raíz de Mandrágora + Baño de Agua Arcana en Cristal Lunar",
+        "winners": {
+          "ingredient": "Raíz de Mandrágora",
+          "method": "Baño de Agua Arcana",
+          "flask": "Cristal Lunar"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "guildId": 2,
+      "name": "Poción de Curación Menor",
+      "effect": "Cierra heridas superficiales en segundos.",
+      "difficulty": 1,
+      "state": "Proposal",
+      "endDate": "2026-09-04",
+      "createdBy": 5,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-28T10:00:00.000Z",
+          "changedByName": "Daniel Ruiz"
+        }
+      ],
+      "votes": {
+        "ingredient": {},
+        "method": {},
+        "flask": {}
+      }
+    },
+    {
+      "id": 7,
+      "guildId": 2,
+      "name": "Filtro de Elocuencia",
+      "effect": "Vuelve más persuasivas las palabras del bebedor.",
+      "difficulty": 2,
+      "state": "VotingOpen",
+      "endDate": "2026-08-31",
+      "createdBy": 4,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-24T09:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-27T11:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "8": "Raíz de Mandrágora"
+        },
+        "method": {
+          "10": "Llama Azul"
+        },
+        "flask": {
+          "4": "Cristal Lunar"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "guildId": 2,
+      "name": "Poción de Visión Lunar",
+      "effect": "Permite ver claramente durante la noche.",
+      "difficulty": 2,
+      "state": "Distilled",
+      "endDate": "2026-08-10",
+      "createdBy": 4,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-07-28T09:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-07-29T09:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        },
+        {
+          "state": "Closed",
+          "changedAt": "2026-08-09T09:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        },
+        {
+          "state": "Distilled",
+          "changedAt": "2026-08-10T09:00:00.000Z",
+          "changedByName": "Laura Gómez"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "5": "Polvo de Estrellas",
+          "8": "Raíz de Mandrágora",
+          "10": "Polvo de Estrellas"
+        },
+        "method": {
+          "4": "Baño de Agua Arcana",
+          "5": "Llama Azul",
+          "10": "Llama Azul"
+        },
+        "flask": {
+          "4": "Cristal Lunar",
+          "8": "Cráneo de Plata"
+        }
+      },
+      "finalPotion": {
+        "finalName": "Polvo de Estrellas + Llama Azul en Cristal Lunar",
+        "winners": {
+          "ingredient": "Polvo de Estrellas",
+          "method": "Llama Azul",
+          "flask": "Cristal Lunar"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "guildId": 3,
+      "name": "Brebaje del Silencio",
+      "effect": "Anula cualquier sonido alrededor del bebedor por un minuto.",
+      "difficulty": 3,
+      "state": "Closed",
+      "endDate": "2026-08-22",
+      "createdBy": 6,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-08-12T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-08-13T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        },
+        {
+          "state": "Closed",
+          "changedAt": "2026-08-22T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "6": "Raíz de Mandrágora",
+          "12": "Polvo de Estrellas"
+        },
+        "method": {
+          "6": "Llama Azul",
+          "12": "Baño de Agua Arcana"
+        },
+        "flask": {
+          "6": "Cristal Lunar",
+          "12": "Cráneo de Plata"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "guildId": 3,
+      "name": "Elixir de las Sombras",
+      "effect": "Permite fundirse brevemente con la oscuridad.",
+      "difficulty": 1,
+      "state": "Distilled",
+      "endDate": "2026-08-05",
+      "createdBy": 6,
+      "stateHistory": [
+        {
+          "state": "Proposal",
+          "changedAt": "2026-07-25T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        },
+        {
+          "state": "VotingOpen",
+          "changedAt": "2026-07-26T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        },
+        {
+          "state": "Closed",
+          "changedAt": "2026-08-04T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        },
+        {
+          "state": "Distilled",
+          "changedAt": "2026-08-05T09:00:00.000Z",
+          "changedByName": "Sofía Martínez"
+        }
+      ],
+      "votes": {
+        "ingredient": {
+          "6": "Raíz de Mandrágora",
+          "12": "Polvo de Estrellas"
+        },
+        "method": {
+          "6": "Llama Azul",
+          "12": "Llama Azul"
+        },
+        "flask": {
+          "6": "Cristal Lunar",
+          "12": "Cráneo de Plata"
+        }
+      },
+      "finalPotion": {
+        "finalName": "Raíz de Mandrágora + Llama Azul en Cráneo de Plata",
+        "winners": {
+          "ingredient": "Raíz de Mandrágora",
+          "method": "Llama Azul",
+          "flask": "Cráneo de Plata"
+        }
+      }
+    }
+  ]
+}
