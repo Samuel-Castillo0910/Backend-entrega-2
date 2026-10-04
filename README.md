@@ -27,7 +27,7 @@ JWT_SECRET=...
 JWT_EXPIRES_IN=7d
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:5173
-PUBLIC_URL=https://tu-backend.onrender.com
+PUBLIC_URL=https://backend-entrega-2.onrender.com
 ```
 
 | Variable | Descripción |
@@ -58,8 +58,8 @@ npm start
 
 ## Despliegue
 
-- API desplegada: _pegar aquí la URL_
-- Swagger en producción: _pegar aquí la URL_/api-docs
+- API desplegada: https://backend-entrega-2.onrender.com
+- Swagger en producción: https://backend-entrega-2.onrender.com/api-docs
 - Build command: `npm install`
 - Start command: `npm start`
 - Configurar en el servicio las mismas variables del `.env`.
@@ -67,9 +67,8 @@ npm start
 
 ## Swagger
 
-Con el servidor ejecutándose:
-
-`http://localhost:4000/api-docs`
+En producción: https://backend-entrega-2.onrender.com/api-docs
+- En local, con el servidor ejecutándose: `http://localhost:4000/api-docs`
 
 ## Persona A
 
